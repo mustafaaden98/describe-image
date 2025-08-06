@@ -1,8 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import { ImageUpload } from './components/ImageUpload'
-import { Box } from '@mui/material'
 import Footer from './components/Footer'
 
 function App() {

@@ -1,10 +1,6 @@
-import React, { useRef, useState } from 'react';
-import { Box, Button, Typography } from '@mui/material';
-import PhotoCamera from '@mui/icons-material/PhotoCamera';
+import React, { useState } from 'react';
 
-interface ImageUploadProps {
-  onImageSelect: (file: File) => void;
-}
+
 
 type RecognitionResult = {
   description: string;

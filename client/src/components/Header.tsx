@@ -2,7 +2,6 @@
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Logo from "../assets/logo.png";
 import { Box } from '@mui/material';
 
 export default function Header() {
@@ -11,7 +10,7 @@ export default function Header() {
             <Toolbar>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <img
-                    src={Logo}
+                    src='./Logo.png'
                     alt="logo"
                     style={{
                         height: 72,

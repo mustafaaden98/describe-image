@@ -1,0 +1,14 @@
+{
+  "type": "service_account",
+  "project_id": "image-recognition-467711",
+  "private_key_id": "809c8108d315f2c12b7802e56e6aa2526dd030b6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCUhjx6rLRgD3aG\nfgVgC9WGnNVpE2Dv3/+SxH0hzD1VkmDYs5bO4kX62TLgBMNIyKoCJsAUCPGoIK3M\nimBL24e1EGvIGuK8DiXFoKdUQvlpfVekLykAt8L+FqPmkB6rjDXfwz7wAjRfeb4a\n/vaPG7Akm94mz1RYaazJDzVXSUJqPXxK4G3h38ptZ2yESN2Jg5sk2MiSwwmu5kln\n3VTX+7nTsyKNQAhSbQE2yP8GNf8wDdFbULP/nz6di6kLKNrLP8AQnvjKk2+ivyq8\nzumMA7CaGjLNoJ1cKBrmTpSdme3M0p3ijEyyl1mitAgUNuVhOASOd2VP0VSaKEFY\nt5ywKXw9AgMBAAECggEAEKORNvUOKAzTbHHFzGLHAxOi3Ois3XKswRZ+JkEpReLm\nMqC77mVvDZEzn+Eot4izcxZAQn5WBE3U6qs96oGnjGNQj9RjPkofdSpwVIJESssd\n/GjEIS51C94hcn0G0pUcm/rVnDHDCEctQvz5RkMF0rQbiSGFA3qjPssTYLn2VMxu\nzPJhycKQLkKgqhlaXD9YF+JFrhobHyKHs/S1BVriuIoyCSklptk+WM2HwvhezVTx\nVLKYRXx10UNzg8RiHYZPDWPGTOIEVLsLDAqDRuJq8YlrcQP9aiTtZO2ChAUpDTBi\nm3DJIIRqOzsaV3M107Tzcf5zkvjBUPQ7pNCu7HjPiQKBgQDQXeW8zBpIouY3H/vu\ngHFu/y2ITcMlImbOXDjZw7hYn2FawZUqHNeu23A4i/i948wd1voyNaH50r3VXN/F\nZDCKDkSHqzchrvjxoHkY8pHrQKu9eVBvCemizIilkAI5jAVv36NeP/V1d0Fikr4o\nL0Q/sDV0tcrT/VNhrIgvE1I59wKBgQC2ejkCiA5iCFUImJoLpBqZPaUzAbZHZBA5\nDvm7yrH6XTjvN/7fC9me/qwXAT49Q3qVH+vHCKgBk5lJ6QGto5NFONuac/BhhZ0W\nNHqou0bjr5y6j9FRC4UgqDY6UHsBXmObXPW+NwY3BzVdGcpJDZe/U3ysJCkUz69D\n6oSD0W5OawKBgQCLJTlHA/HFcetVAqnl0qZtnkDU1kEsKjYHNrTMT5Rqsjx8M+wd\nzFcIMQhW6ro4bMghYS+BmilJwL7+nd/dXJPBjdeb1e2iM8uQ6D4WN97UAELv6/SX\nwkHgcsAJ+ApUTbpPxEO/q+yJ/hKO9jnAchgcg9qezsvdFz24a1QiQ7/UbwKBgAtI\nO0Ygy2LcSQWjCcM2fj6DRTeGH5MCaM5eUqp9uctVADQqLiP0Q5xE+rbhaMu45Fdc\nBePkcR7H1W5wbZ4iwvRAs7M0/+PHsxKwY/USvytMrFAMnFB6edyvCctJNpG7GEV+\n1eLQ3B2C4JXFBnDF2mAF9WtfQPr8bEWytkbAKCXJAoGAbuzCRaBYSJVh4xVC0vx1\nl1pCcpPIag7c93GaxflVnmqULrrFqeku7P7oq5OGvBOuAu2hn7Ulp3iCKjLW+ZwE\niV39xVV0j+ZZaAEDwCCaHvPqAfwjYUSFQV2Nrf9NRviluq+uDZJvyfL5bC5uvzlB\n517b4A9CEzpir2DRXkF2o2c=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mustafaaden98@image-recognition-467711.iam.gserviceaccount.com",
+  "client_id": "101580715341706356178",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mustafaaden98%40image-recognition-467711.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+

@@ -1,3 +1,5 @@
+
+
 import express from 'express';
 import multer from 'multer';
 import cors from 'cors';
@@ -5,10 +7,22 @@ import dotenv from 'dotenv';
 import { GoogleGenAI } from '@google/genai';
 import path from 'path';
 import fs from 'fs';
+const os = require('os');
+
+const tmpDir = os.tmpdir();
 
 
 dotenv.config();
 
+
+if (process.env.GOOGLE_CLOUD_CONFIG_BASE64) {
+  const targetPath = path.join(tmpDir, 'service-account.json');
+  const buffer = Buffer.from(process.env.GOOGLE_CLOUD_CONFIG_BASE64, 'base64');
+  fs.writeFileSync(targetPath, buffer);
+  process.env.GOOGLE_APPLICATION_CREDENTIALS = targetPath;
+
+  try { fs.chmodSync(targetPath, 0o600); } catch (e) { /* ignore */ }
+}
 const app = express();
 const upload = multer(); // for parsing multipart/form-data
 
@@ -18,15 +32,18 @@ app.use(express.json());
 const GOOGLE_CLOUD_PROJECT = process.env.GOOGLE_CLOUD_PROJECT!;
 const GOOGLE_CLOUD_LOCATION = process.env.GOOGLE_CLOUD_LOCATION || 'global';
 
+
 // Decode base64 credentials and write to a temp file
-if (process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64) {
-  const keyFilePath = path.join(__dirname, '../image-reognition.json');
-  fs.writeFileSync(
-    keyFilePath,
-    Buffer.from(process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64, 'base64').toString('utf-8')
-  );
-  process.env.GOOGLE_APPLICATION_CREDENTIALS = keyFilePath;
-}
+// if (process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64) {
+//   const keyFilePath = path.join(__dirname, '../service-account.json');
+//   fs.writeFileSync(
+//     keyFilePath,
+//     Buffer.from(process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64, 'base64').toString('utf-8')
+//   );
+//   process.env.GOOGLE_APPLICATION_CREDENTIALS = keyFilePath;
+// }
+
+
 
 
 // Authenticate using GOOGLE_APPLICATION_CREDENTIALS env variable
@@ -62,6 +79,6 @@ app.post('/analyze-image', upload.single('image'), async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
+app.listen(8080, '0.0.0.0', () => {
   console.log('Server is running at http://localhost:8080');
 });

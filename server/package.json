@@ -26,6 +26,9 @@
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsc"
   },
+  "nodemonConfig" : {
+    "ignore" : ["service-account.json"]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

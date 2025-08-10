@@ -45,7 +45,7 @@ export const ImageUpload =() => {
     formData.append('image', selectedFile); // The key 'image' must match backend multer field name
 
     try {
-      const response = await fetch('https://describe-image-server-980143777973.europe-west1.run.app/analyze-image', {
+      const response = await fetch('https://api.nafimusti.info/analyze-image', {
         method: 'POST',
         body: formData,
         // No need to set Content-Type header for FormData; browser handles it with boundaries
@@ -78,7 +78,7 @@ export const ImageUpload =() => {
 
   return (
     <div style={{ maxWidth: 400, margin: 'auto', padding: 20, fontFamily: 'Arial' }}>
-      <h2>Capture Image</h2>
+      <h2>Select image</h2>
       <input type="file" accept="image/*" onChange={onFileChange} style={{width:'100%'}} />
       {previewUrl && (
         <div style={{ margin: '20px 0' }}>
@@ -98,7 +98,7 @@ export const ImageUpload =() => {
           color: '#fff',
         }}
       >
-        {loading ? 'Recognizing please wait...' : 'Recognize Image'}
+        {loading ? 'Recognizing please wait...' : 'Describe Image'}
       </button>
       {error && (
         <div style={{ marginTop: 15, color: 'red' }}>

@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div >
+    <div style={{backgroundColor: '#E8F0FE'}}>
         <Header />
         <div className="body-container">
         <ImageUpload/>
